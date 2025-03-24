@@ -14,7 +14,7 @@ class CategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        DB:table('categories')->insert([
+        DB::table('categories')->insert([
             ['category_name'=> 'ファッション'],
             ['category_name'=> '家電'],
             ['category_name'=> 'インテリア'],
@@ -29,6 +29,6 @@ class CategoryTableSeeder extends Seeder
             ['category_name'=> 'アクセサリー'],
             ['category_name'=> 'おもちゃ'],
             ['category_name'=> 'ベビー・キッズ'],
-        ])
+        ]);
     }
 }

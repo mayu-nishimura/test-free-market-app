@@ -19,10 +19,10 @@ class CreateItemsTable extends Migration
             $table->foreignId('condition_id')->constrained('conditions');
             $table->string('item_name');
             $table->string('brand_name');
-            $table->decimal('price', 8, 2);
+            $table->integer('price');
             $table->text('detail');
             $table->string('img_url');
-            $table->tinyInteger('sold');
+            $table->tinyInteger('sold')->default(0); // 0: 未販売, 1: 売却済み
             $table->timestamps();
         });
     }
