@@ -1,0 +1,15 @@
+/* PC用*/
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .registration-form {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+
+/* タブレット用 */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .registration-form {
+        width: 90%;
+        font-size: 14px;
+    }
+}
